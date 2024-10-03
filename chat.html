@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Tracking System</title>
+    <!-- Link to the updated CSS -->
+    <link rel="stylesheet" href="sty.css">
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Bus Tracking System</h1>
+        <p>Station Name: <strong>VIJAYANAGAR</strong></p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#alerts">Alerts</a></li>
+            <li><a href="#track">Track</a></li>
+            <li><a href="#information">Information</a></li>
+            <li><a href="#instructions">S-M Instructions</a></li>
+            <li><button id="theme-toggle">Toggle Theme</button></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="tab-content">
+        <!-- Alerts Section -->
+        <section id="alerts">
+            <h2>Alerts</h2>
+            <ul>
+                <li>Bus 101 delayed by 10 minutes</li>
+                <li>Bus 202 diverted due to road closure</li>
+                <li class="issue">Bus 304 has some technical issue. Master, please report it.</li>
+                <li>Bus 202 will arrive in 20 minutes</li>
+                <li>Bus 310 will arrive in 15 minutes</li>
+            </ul>
+        </section>
+
+        <!-- Track Buses Section -->
+        <section id="track">
+            <h2>Track Buses</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bus Number</th>
+                        <th>Location</th>
+                        <th>Depot Number</th>
+                        <th>Track Now</th>
+                        <th>Report an Issue</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Vijayanagar</td>
+                        <td>D1</td>
+                        <td><button class="track-btn">Track Now</button></td>
+                        <td><button class="report-btn">REPORT</button></td>
+                    </tr>
+                    <tr>
+                        <td>202</td>
+                        <td>Chandra Layout</td>
+                        <td>D2</td>
+                        <td><button class="track-btn">Track Now</button></td>
+                        <td><button class="report-btn">REPORT</button></td>
+                    </tr>
+                    <tr>
+                        <td>302</td>
+                        <td>Banashankari</td>
+                        <td>D2</td>
+                        <td><button class="track-btn">Track Now</button></td>
+                        <td><button class="report-btn">REPORT</button></td>
+                    </tr>
+                    <tr>
+                        <td>304</td>
+                        <td>Nayandanahalli</td>
+                        <td>D2</td>
+                        <td><button class="track-btn">Track Now</button></td>
+                        <td><a href="report.html" class="report-btn">REPORT</a></td>
+                    </tr>
+                    <tr>
+                        <td>310</td>
+                        <td>Moodalapalya</td>
+                        <td>D2</td>
+                        <td><button class="track-btn">Track Now</button></td>
+                        <td><button class="report-btn">REPORT</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Station Information Section -->
+        <section id="information">
+            <h2>Station Information</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bus Number</th>
+                        <th>Previous Station</th>
+                        <th>Current Station</th>
+                        <th>Next Station</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Maruthi Mandir</td>
+                        <td>Vijayanagar</td>
+                        <td>Vijayanagar Metro Station</td>
+                    </tr>
+                    <tr>
+                        <td>202</td>
+                        <td>Nagarabhavi</td>
+                        <td>Chandra Layout</td>
+                        <td>Vijayanagar</td>
+                    </tr>
+                    <tr>
+                        <td>302</td>
+                        <td>Devegowda Petrol Bunk</td>
+                        <td>Banashankari</td>
+                        <td>Banashankari TTMC</td>
+                    </tr>
+                    <tr class="issue-row">
+                        <td>304</td>
+                        <td>PES University</td>
+                        <td>Nayandanahalli</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>310</td>
+                        <td>Kalyan Nagar</td>
+                        <td>Moodalapalya</td>
+                        <td>Vijayanagar</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <!-- Instructions Section -->
+    <div id="instructions">
+        <h3>Instructions for Station Master</h3>
+        <ul>
+            <li>Station Master will be responsible for the departed and upcoming buses.</li>
+            <li>Station Master should report if any of the buses go wrong or malfunction.</li> 
+            <li>Keep checking <strong>alerts regularly</strong>.</li>
+            <li>The malfunctioned bus will show a <strong>RED</strong> coloured REPORT button.</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Bus Tracking System. All rights reserved.
+    </footer>
+
+    <!-- Link to the updated JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
